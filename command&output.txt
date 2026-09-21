@@ -1,0 +1,285 @@
+
+D:\Git-journy>git --version
+git version 2.50.1.windows.1
+
+D:\Git-journy>C:
+
+C:\Users\LENOVO>git --version
+git version 2.50.1.windows.1
+
+C:\Users\LENOVO>cd D:\Git-journy
+
+C:\Users\LENOVO>D:
+
+D:\Git-journy>git config --global user.name
+AsmaulHusna58
+
+D:\Git-journy>git config --global user.email
+asmaulhusana1358@gmail.com
+
+D:\Git-journy>git init
+Reinitialized existing Git repository in D:/Git-journy/.git/
+
+D:\Git-journy>git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+D:\Git-journy>git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+D:\Git-journy>dir
+ Volume in drive D has no label.
+ Volume Serial Number is A28F-6C46
+
+ Directory of D:\Git-journy
+
+09/21/2026  08:07 AM    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  38,105,235,456 bytes free
+
+D:\Git-journy>echo
+ECHO is on.
+
+D:\Git-journy>dir
+ Volume in drive D has no label.
+ Volume Serial Number is A28F-6C46
+
+ Directory of D:\Git-journy
+
+09/21/2026  08:07 AM    <DIR>          .
+               0 File(s)              0 bytes
+               1 Dir(s)  38,105,235,456 bytes free
+
+D:\Git-journy>echo # Git Journey > README.md
+
+D:\Git-journy>dir
+ Volume in drive D has no label.
+ Volume Serial Number is A28F-6C46
+
+ Directory of D:\Git-journy
+
+09/21/2026  08:15 AM    <DIR>          .
+09/21/2026  08:15 AM                16 README.md
+               1 File(s)             16 bytes
+               1 Dir(s)  38,105,235,456 bytes free
+
+D:\Git-journy>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Git-journy>git add README.md
+
+D:\Git-journy>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+D:\Git-journy>git commit -m "This is my first commit"
+[main (root-commit) 859ca7f] This is my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+D:\Git-journy>git status
+On branch main
+nothing to commit, working tree clean
+
+D:\Git-journy>git branch
+* main
+
+D:\Git-journy>git branch -M master
+
+D:\Git-journy>git branch
+* master
+
+D:\Git-journy>git branch -M main
+
+D:\Git-journy>git branch
+* main
+
+D:\Git-journy>git remote add origin https://github.com/AsmaulHusna58/git-journey.git
+
+D:\Git-journy>git status
+On branch main
+nothing to commit, working tree clean
+
+D:\Git-journy>git remote -v
+origin  https://github.com/AsmaulHusna58/git-journey.git (fetch)
+origin  https://github.com/AsmaulHusna58/git-journey.git (push)
+
+D:\Git-journy>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AsmaulHusna58/git-journey.git
+ * [new branch]      main -> main
+
+D:\Git-journy>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Git-journy>git restore README.md
+
+D:\Git-journy>git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Git-journy>git add .
+
+D:\Git-journy>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text.txt
+
+
+D:\Git-journy>git commit -m "this is my second commit "
+[main 3e99d8c] this is my second commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+
+D:\Git-journy>git remote -v
+origin  https://github.com/AsmaulHusna58/git-journey.git (fetch)
+origin  https://github.com/AsmaulHusna58/git-journey.git (push)
+
+D:\Git-journy>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AsmaulHusna58/git-journey.git
+   859ca7f..3e99d8c  main -> main
+
+D:\Git-journy>cd D:\New folder (2)
+
+D:\New folder (2)>git clone https://github.com/AsmaulHusna58/git-journey.git
+Cloning into 'git-journey'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+D:\New folder (2)> cd Git Journey
+The system cannot find the path specified.
+
+D:\New folder (2)>cd D:\Git-journy
+
+D:\Git-journy>git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Git-journy>git add .
+
+D:\Git-journy>git commit -m "This is my third commit "
+[main ecfbfa6] This is my third commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document.txt
+
+D:\Git-journy>git status
+On branch main
+nothing to commit, working tree clean
+
+D:\Git-journy>git branch
+* main
+
+D:\Git-journy>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 304 bytes | 304.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AsmaulHusna58/git-journey.git
+   3e99d8c..ecfbfa6  main -> main
+
+D:\Git-journy>doskey /command-history.txt
+Invalid macro definition.
+
+D:\Git-journy>doskey /history > command_history.txt
+
+D:\Git-journy>dir
+ Volume in drive D has no label.
+ Volume Serial Number is A28F-6C46
+
+ Directory of D:\Git-journy
+
+09/21/2026  08:48 AM    <DIR>          .
+09/21/2026  08:48 AM               977 command_history.txt
+09/21/2026  08:40 AM                 0 New Text Document.txt
+09/21/2026  08:27 AM                16 README.md
+09/21/2026  08:30 AM                 0 text.txt
+               4 File(s)            993 bytes
+               1 Dir(s)  38,105,157,632 bytes free
+
+D:\Git-journy>git init
+Reinitialized existing Git repository in D:/Git-journy/.git/
+
+D:\Git-journy>git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        command_history.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Git-journy>git add command_history.txt
+
+D:\Git-journy>git commit -m "Git command history saved"
+[main f669569] Git command history saved
+ 1 file changed, 50 insertions(+)
+ create mode 100644 command_history.txt
+
+D:\Git-journy>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 696 bytes | 696.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AsmaulHusna58/git-journey.git
+   ecfbfa6..f669569  main -> main
+
+D:\Git-journy>git status
+On branch main
+nothing to commit, working tree clean
+
+D:\Git-journy>start-transcript -path "D:\Git-journy\command_history.txt"
+'start-transcript' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Git-journy>Start-Transcript -Path "D:\Git-journy\command_history.txt"
+'Start-Transcript' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\Git-journy>
