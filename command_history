@@ -1,0 +1,211 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260921085655
+Username: DESKTOP-GOUMNVL\LENOVO
+RunAs User: DESKTOP-GOUMNVL\LENOVO
+Configuration Name: 
+Machine: DESKTOP-GOUMNVL (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3920
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is D:\Git-journy\command_history
+PS D:\Git-journy> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be c
+ommitted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        deleted:    New Text Document.txt
+        deleted:    text.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be
+committed)
+        command_history
+
+no changes added to commit (use "git add" and/or "git
+commit -a")
+PS D:\Git-journy> git add command_history.txt
+
+PS D:\Git-journy> git commit -m "command_history of input and output"
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be c
+ommitted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        deleted:    New Text Document.txt
+        deleted:    text.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be
+committed)
+        command_history
+
+no changes added to commit (use "git add" and/or "git
+commit -a")
+PS D:\Git-journy> git add .
+
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    New Text Document.txt -> command_h
+istory
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+PS D:\Git-journy> git add .
+
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    New Text Document.txt
+        new file:   command_history
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+PS D:\Git-journy> git restore command_history 
+Unlink of file 'command_history' failed. Should I try
+again? (y/n) y
+Unlink of file 'command_history' failed. Should I try
+again? (y/n) n
+error: unable to unlink old 'command_history': Invalid
+ argument
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    New Text Document.txt
+        new file:   command_history
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+PS D:\Git-journy> Start-Transcript -Path "D:\Git-journy\command_history of input&output" -Append
+Transcript started, output file is D:\Git-journy\command_history of input&output
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    New Text Document.txt
+        new file:   command_history
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+
+Untracked files:
+  (use "git add <file>..." to include in what will be
+committed)
+        command_history of input&output
+PS D:\Git-journy> git add .
+
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command_history
+        renamed:    New Text Document.txt -> command_h
+istory of input&output
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+        modified:   command_history of input&output
+PS D:\Git-journy> git add .
+
+PS D:\Git-journy> git status 
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    New Text Document.txt
+        new file:   command_history
+        new file:   command_history of input&output
+        deleted:    text.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+itted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        modified:   command_history
+        modified:   command_history of input&output
+PS D:\Git-journy> Stop-Transcript
+Transcript stopped, output file is D:\Git-journy\command_history of input&output
+PS D:\Git-journy> git restore --staged .
+
+PS D:\Git-journy> git add -- "command_history of input&output"
+
+PS D:\Git-journy> git add -- "command_history of input&output.txt"
+fatal: pathspec 'command_history of input&output.txt'
+did not match any files
+PS D:\Git-journy> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command_history of input&output
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be c
+ommitted)
+  (use "git restore <file>..." to discard changes in w
+orking directory)
+        deleted:    New Text Document.txt
+        deleted:    text.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be
+committed)
+        command_history
+PS D:\Git-journy> git commit -m "Add command history with input and output"
+[main 74cb22f] Add command history with input and outp
+ut
+ 1 file changed, 79 insertions(+)
+ create mode 100644 command_history of input&output
+PS D:\Git-journy> git push origin main 
+To https://github.com/AsmaulHusna58/git-journey.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com
+/AsmaulHusna58/git-journey.git'
+hint: Updates were rejected because the remote contain
+s work that you do not
+hint: have locally. This is usually caused by another
+repository pushing to
+hint: the same ref. If you want to integrate the remot
+e changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push
+--help' for details.
