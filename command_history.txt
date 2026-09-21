@@ -1,0 +1,50 @@
+cls
+git --version
+C:
+git --version
+cd D:\Git-journy
+D:
+git config --global user.name
+git config --global user.email
+git init 
+git status
+git add README.md
+dir
+echo 
+dir 
+echo # Git Journey > README.md
+dir 
+git status
+git add README.md 
+git status 
+git commit -m "This is my first commit"
+git status
+git branch
+git branch -M master 
+git branch
+git branch -M main 
+git branch 
+git remote add origin https://github.com/AsmaulHusna58/git-journey.git
+git status 
+git remote -v
+git push origin main
+git status
+git restore README.md 
+git status
+git add .
+git status 
+git commit -m "this is my second commit "
+git remote -v 
+git push origin main 
+cd D:\New folder (2) 
+git clone https://github.com/AsmaulHusna58/git-journey.git
+ cd Git Journey 
+cd D:\Git-journy
+git status
+git add .
+git commit -m "This is my third commit "
+git status
+git branch 
+git push origin main
+doskey /command-history.txt 
+doskey /history > command_history.txt
